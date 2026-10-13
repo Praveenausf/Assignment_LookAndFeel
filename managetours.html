@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Praveena Vemula">
+  <meta name="description" content="Manage Velvet Infusion tour dates: add, view, edit and delete shows.">
+  <title>Velvet Infusion | Manage Tours</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Velvet <b>Infusion</b></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="managetours.html">Manage Tours</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-head">
+      <div class="wrap">
+        <h1>Manage Tour Dates</h1>
+        <p class="muted">Add, view, update and delete shows on the Glasshouse Weather Tour.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:12px;">
+      <div class="wrap grid split">
+
+        <!-- Create / Update form -->
+        <div>
+          <div class="card">
+            <h2 id="form-title">Add a Show</h2>
+            <form id="tour-form" novalidate>
+              <input type="hidden" id="tour-id">
+              <div class="field">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+                <div class="error">Please choose a date.</div>
+              </div>
+              <div class="field">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="e.g. Miami, FL" required>
+                <div class="error">Please enter a city.</div>
+              </div>
+              <div class="field">
+                <label for="venue">Venue</label>
+                <input type="text" id="venue" placeholder="e.g. Downtown Music Hall" required>
+                <div class="error">Please enter a venue.</div>
+              </div>
+              <div class="two-col">
+                <div class="field">
+                  <label for="capacity">Capacity</label>
+                  <input type="number" id="capacity" min="1" placeholder="800" required>
+                  <div class="error">Enter a number above 0.</div>
+                </div>
+                <div class="field">
+                  <label for="sold">Tickets Sold</label>
+                  <input type="number" id="sold" min="0" placeholder="0" required>
+                  <div class="error">Can't be more than capacity.</div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="status">Status</label>
+                <select id="status">
+                  <option>Announced</option>
+                  <option selected>On Sale</option>
+                  <option>Sold Out</option>
+                  <option>Cancelled</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-main btn-block" id="submit-btn">Add Show</button>
+              <button type="button" class="btn btn-ghost btn-block hidden" id="cancel-btn" style="margin-top:8px;">Cancel</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Read / Delete table -->
+        <div>
+          <div class="card">
+            <div class="row-between" style="margin-bottom:12px;">
+              <h2 style="margin:0;">All Shows <span class="count-pill" id="count">0</span></h2>
+              <input type="search" class="search" id="search" placeholder="Search city or venue..." aria-label="Search shows">
+            </div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr><th>Date</th><th>City</th><th>Venue</th><th>Sold</th><th>Status</th><th style="text-align:right;">Actions</th></tr>
+                </thead>
+                <tbody id="tour-table"></tbody>
+              </table>
+            </div>
+            <p class="muted center hidden" id="empty-msg" style="margin-top:20px;">No shows match your search.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Velvet Infusion &middot; Website by Praveena Vemula</span>
+      <a href="aboutus.html">About this site</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/manage.js" defer></script>
+</body>
+</html>

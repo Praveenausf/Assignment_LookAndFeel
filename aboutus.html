@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Praveena Vemula">
+  <meta name="description" content="About Praveena Vemula, developer of Velvet Infusion website.">
+  <title>Velvet Infusion | About Us</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Velvet <b>Infusion</b></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="managetours.html">Manage Tours</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-head">
+      <div class="wrap">
+        <h1>About Us</h1>
+        <p class="muted">The developer behind this site and how it was built.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:12px;">
+      <div class="wrap grid split">
+
+        <div>
+          <div class="card center">
+            <div class="avatar big">PV</div>
+            <h2>Praveena Vemula</h2>
+            <p class="muted">Graduate Student, Information Systems<br>University of South Florida</p>
+            <a href="https://github.com/Praveenausf/Assignment_LookAndFeel" class="btn btn-main btn-block" target="_blank" rel="noopener">View Source Code on GitHub</a>
+            <a href="https://github.com/Praveenausf" class="btn btn-ghost btn-block" style="margin-top:8px;" target="_blank" rel="noopener">My GitHub Profile</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <h2>Professional Profile</h2>
+            <p style="margin:0;">I'm Praveena Vemula, a graduate student taking ISM 6225 (Application Development for Analytics) at USF. I enjoy turning data into simple, useful tools and pairing analytics with clean web interfaces. For this project my assigned content theme is a music band, so I built a fan and management website for a band.</p>
+          </div>
+
+          <div class="card">
+            <h2>Building This Website</h2>
+            <p>This site is the user interface for a fan and management portal for <strong>Velvet Infusion</strong>, an indie rock band from Tampa, Florida. Fans can meet the band, browse albums and see upcoming shows; the band's manager can maintain tour dates; and everyone can explore streaming and ticket statistics.</p>
+            <p>I planned four pages that share the same top menu so navigation is consistent. The tour, streaming and song data is kept in one file (<code>js/data.js</code>) so it can later be replaced by a real database without changing the pages.</p>
+            <ul style="margin:0;">
+              <li><strong>Home</strong>: band overview, members, albums and upcoming shows built from the data file.</li>
+              <li><strong>Manage Tours</strong>: a form that mocks Create, Read, Update and Delete for tour dates, with input checks and search.</li>
+              <li><strong>Analytics</strong>: line, doughnut and bar charts plus summary numbers.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+              <li>HTML5</li><li>CSS3 (Grid &amp; Flexbox)</li><li>JavaScript</li><li>Chart.js</li>
+              <li>Git &amp; GitHub</li><li>GitHub Pages</li><li>Visual Studio Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Velvet Infusion &middot; Website by Praveena Vemula</span>
+      <a href="aboutus.html">About this site</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

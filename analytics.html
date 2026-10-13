@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Praveena Vemula">
+  <meta name="description" content="Streaming and ticket sales analytics for Velvet Infusion.">
+  <title>Velvet Infusion | Analytics</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Velvet <b>Infusion</b></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="managetours.html">Manage Tours</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-head">
+      <div class="wrap">
+        <h1>Band Analytics</h1>
+        <p class="muted">Streaming, songs, listeners and ticket sales at a glance.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:12px;">
+      <div class="wrap">
+        <div class="grid cols-4" style="margin-bottom:20px;">
+          <div class="card stat"><div class="num" id="kpi-month">-</div><div class="label">Streams in Oct</div></div>
+          <div class="card stat"><div class="num" id="kpi-growth">-</div><div class="label">Growth since May</div></div>
+          <div class="card stat"><div class="num" id="kpi-tickets">-</div><div class="label">Tickets Sold</div></div>
+          <div class="card stat"><div class="num" id="kpi-fill">-</div><div class="label">Avg. Venue Fill</div></div>
+        </div>
+
+        <div class="grid split-wide" style="margin-bottom:20px;">
+          <div class="card">
+            <h2>Monthly Streams</h2>
+            <p class="muted small">Total plays across all platforms, last 6 months</p>
+            <div class="chart-box"><canvas id="streamsChart" role="img" aria-label="Line chart of monthly streams"></canvas></div>
+          </div>
+          <div class="card">
+            <h2>Listeners by Region</h2>
+            <p class="muted small">Share of monthly listeners (%)</p>
+            <div class="chart-box"><canvas id="regionChart" role="img" aria-label="Doughnut chart of listeners by region"></canvas></div>
+          </div>
+        </div>
+
+        <div class="grid cols-2">
+          <div class="card">
+            <h2>Top 5 Songs</h2>
+            <p class="muted small">All-time plays</p>
+            <div class="chart-box"><canvas id="songsChart" role="img" aria-label="Bar chart of top songs"></canvas></div>
+          </div>
+          <div class="card">
+            <h2>Ticket Sales by Show</h2>
+            <p class="muted small">Tickets sold vs. venue capacity</p>
+            <div class="chart-box"><canvas id="ticketsChart" role="img" aria-label="Bar chart of ticket sales by city"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Velvet Infusion &middot; Website by Praveena Vemula</span>
+      <a href="aboutus.html">About this site</a>
+    </div>
+  </footer>
+
+  <script src="js/chart.umd.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+</body>
+</html>

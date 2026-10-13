@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Praveena Vemula">
+  <meta name="description" content="Velvet Infusion, an indie rock band from Tampa, FL: members, albums and upcoming shows.">
+  <title>Velvet Infusion | Home</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Velvet <b>Infusion</b></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="managetours.html">Manage Tours</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Indie Rock &middot; Tampa, FL</p>
+        <h1 class="neon-text">Velvet Infusion</h1>
+        <p class="lead">Four friends, one garage, and a sound built on shimmering guitars and late-night synths. Catch us on the <strong>Glasshouse Weather Tour</strong> this winter.</p>
+        <div class="btn-row">
+          <a href="managetours.html" class="btn btn-main btn-lg">See Tour Dates</a>
+          <a href="analytics.html" class="btn btn-ghost btn-lg">View Band Stats</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:24px;">
+      <div class="wrap grid cols-4">
+        <div class="card stat"><div class="num">3</div><div class="label">Albums</div></div>
+        <div class="card stat"><div class="num">3.9M</div><div class="label">Total Streams</div></div>
+        <div class="card stat"><div class="num">6</div><div class="label">Tour Stops</div></div>
+        <div class="card stat"><div class="num">2018</div><div class="label">Formed</div></div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <h2 class="section-title">Meet the Band</h2>
+        <p class="section-sub">The people behind the noise.</p>
+        <div class="grid cols-4 people">
+          <div class="card hover center"><img class="portrait" src="img/member-wren.svg" alt="Wren Hollow"><h3>Wren Hollow</h3><p class="muted small">Lead Vocals &amp; Rhythm Guitar</p></div>
+          <div class="card hover center"><img class="portrait" src="img/member-indigo.svg" alt="Indigo Pike"><h3>Indigo Pike</h3><p class="muted small">Lead Guitar</p></div>
+          <div class="card hover center"><img class="portrait" src="img/member-bastian.svg" alt="Bastian Quill"><h3>Bastian Quill</h3><p class="muted small">Bass &amp; Synths</p></div>
+          <div class="card hover center"><img class="portrait" src="img/member-juniper.svg" alt="Juniper Rook"><h3>Juniper Rook</h3><p class="muted small">Drums</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <h2 class="section-title">Discography</h2>
+        <p class="section-sub">Three records and counting.</p>
+        <div class="grid cols-3">
+          <div class="card hover"><img class="cover-img" src="img/album-glasshouse.svg" alt="Glasshouse Weather album cover"><h3>Glasshouse Weather</h3><p class="muted small">2025 &middot; 11 tracks &middot; Latest release</p></div>
+          <div class="card hover"><img class="cover-img" src="img/album-moth.svg" alt="Moth Radio album cover"><h3>Moth Radio</h3><p class="muted small">2022 &middot; 10 tracks</p></div>
+          <div class="card hover"><img class="cover-img" src="img/album-porchlight.svg" alt="Porchlight EP cover"><h3>Porchlight</h3><p class="muted small">2019 &middot; EP &middot; 6 tracks</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="row-between">
+          <div>
+            <h2 class="section-title">Upcoming Shows</h2>
+            <p class="section-sub">Glasshouse Weather Tour &mdash; Winter 2026</p>
+          </div>
+          <a href="managetours.html" class="btn btn-ghost" style="margin-bottom:1.75rem;">All Tour Dates &rarr;</a>
+        </div>
+        <div class="grid cols-4" id="upcoming-shows"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Velvet Infusion &middot; Website by Praveena Vemula</span>
+      <a href="aboutus.html">About this site</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
