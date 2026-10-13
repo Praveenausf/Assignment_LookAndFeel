@@ -1,5 +1,5 @@
 /**
- * Shared scripts for every page — Velvet Infusion
+ * Shared scripts for every page — Infusion
  * Author: Praveena Vemula
  */
 document.addEventListener("DOMContentLoaded", function () {

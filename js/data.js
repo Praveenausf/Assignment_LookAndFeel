@@ -1,5 +1,5 @@
 /**
- * Tour, streaming and song data for Velvet Infusion.
+ * Tour, streaming and song data for Infusion.
  * Author: Praveena Vemula
  */
 var TOUR_DATES = [
